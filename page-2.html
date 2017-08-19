@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
     <head>
         <!-- Boostrap CSS stylesheets -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
@@ -7,70 +7,76 @@
         <title>Contact Us</title>
         <style>
             
-            input {height:25px; width: 275px; margin-bottom: 10px;}
-            
-            body {margin:20px; margin-left:35px;}
         </style>
     </head>
     <body>
-        <!-- Nav bar -->
-        <header>
-            <nav>
-                <div style="position:relative; top:10px; left:10px">
-                <img src="images/62868-silhouette-pushing-wheelbarrow.png" height="45px">
+        <div class="container">
+            <!-- Nav bar -->
+            <header>
+                <nav>
+                    <div style="position:relative; top:10px; left:10px">
+                    <img src="images/62868-silhouette-pushing-wheelbarrow.png" height="45px">
+                    </div>
+                    <div style="position: relative; left:210px; top:-20px;">
+                    <a href="master.html">Meet Liam</a> | <a href="page-2.html">Contact us</a> | <a href="page-3.html">Who?</a>
+                    </div>
+                    <br>
+                </nav>
+            </header>
+            <!-- Main content -->
+            <h2>Contact Us</h1>
+            <p>Wanna get in touch so we can scheme on how to help Liam destroy his arch nemesis Tobin?</p>
+            </br>
+            <form action="/action_page-2.php" method="get">
+                <div class="row">
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <label for="firstname">First name</label>
+                        </br>
+                        <input type="text" name="firstname" id="firstname" required>
+                        </br>
+                        <label for="lastname">Last name</label>
+                        </br>
+                        <input type="text" name="lastname" id="lastname" required>
+                        </br>
+                        <label for="email">Email address</label>
+                        </br>
+                        <input type="email" name="email" id="email" required>
+                        </br>
+                        </br>
+                    </div>
+                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                        <label for="help">Can you help?</label>
+                        </br>
+                        <select name="how-to-help" id="help" placeholder="Please select">
+                            <option value="guns">Provide guns</option>
+                            <option value="moral">Moral support</option>
+                            <option value="planning">Murder planning</option>
+                            <option value="disposal">Body disposal</option>
+                            <option value="other">Something else</option>
+                        </select>
+                        </br>
+                        </br>
+                        <label for="message">Your message</label>
+                        </br>
+                        <textarea name="message" id="message" rows="3" cols="30" placeholder="What did you want to get in touch about?">
+                        </textarea>
+                        </br>
+                        </br>
+                    </div>
                 </div>
-                <div style="position: relative; left:210px; top:-20px;">
-                <a href="master.html">Meet Liam</a> | <a href="page-2.html">Contact us</a> | <a href="page-3.html">Who?</a>
-                </div>
-                <br>
-            </nav>
-        </header>
-        <!-- Main content -->
-        <h2>Contact Us</h1>
-        <p>Wanna get in touch so we can scheme on how to help Liam destroy his arch nemesis Tobin?</p>
-        </br>
-        <form action="/action_page-2.php" method="get">
-            <label for="firstname">First name</label>
-            </br>
-            <input type="text" name="firstname" id="firstname" required>
-            </br>
-            <label for="lastname">Last name</label>
-            </br>
-            <input type="text" name="lastname" id="lastname" required>
-            </br>
-            <label for="email">Email address</label>
-            </br>
-            <input type="email" name="email" id="email" required>
-            </br>
-            </br>
-            <label for="help">Can you help with the following?</label>
-            </br>
-            <select name="how-to-help" id="help" placeholder="Please select">
-                <option value="guns">Provide guns</option>
-                <option value="moral">Moral support</option>
-                <option value="planning">Murder planning</option>
-                <option value="disposal">Body disposal</option>
-                <option value="other">Something else</option>
-            </select>
-            </br>
-            </br>
-            <label for="message">Your message</label>
-            </br>
-            <textarea name="message" id="message" rows="4" cols="35" placeholder="What did you want to get in touch about?">
-            </textarea>
-            </br>
-            </br>
-            <input type="submit" value="Submit">
+                <input type="submit" value="Submit">
+                
+            </form>
             
-        </form>
-        
-         <!-- Bootstrap js -->
-        <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
-        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
-        <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
-        </br>
-        </br>
-        </br>
+             <!-- Bootstrap js -->
+            <script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+            <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.11.0/umd/popper.min.js" integrity="sha384-b/U6ypiBEHpOf/4+1nzFpr53nxSS+GLCkfwBdFNTxtclqqenISfwAzpKaMNFNmj4" crossorigin="anonymous"></script>
+            <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/js/bootstrap.min.js" integrity="sha384-h0AbiXch4ZDo7tp9hKZ4TsHbi047NrKGLO3SEJAg45jXxnGIfYzk4Si90RDIqNm1" crossorigin="anonymous"></script>
+            </br>
+            </br>
+            </br>
+            &copy: Reuben Harcourt
+        </div>
     </body>
-    &copy: Reuben Harcourt
+
 </html>
