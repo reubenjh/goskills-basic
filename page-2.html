@@ -4,9 +4,11 @@
         <!-- Boostrap CSS stylesheets -->
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0-beta/css/bootstrap.min.css" integrity="sha384-/Y6pD6FV/Vv2HJnA6t+vslU6fwYXjCFtcEpHbNJ0lyAFsXTsjBbfaDjzALeQsN6M" crossorigin="anonymous">
         
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        
         <title>Contact Us</title>
         <style>
-            
+            label {font-weight:500;}
         </style>
     </head>
     <body>
@@ -27,44 +29,35 @@
             <h2>Contact Us</h1>
             <p>Wanna get in touch so we can scheme on how to help Liam destroy his arch nemesis Tobin?</p>
             </br>
+            </br>
             <form action="/action_page-2.php" method="get">
-                <div class="row">
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                        <label for="firstname">First name</label>
-                        </br>
-                        <input type="text" name="firstname" id="firstname" required>
-                        </br>
-                        <label for="lastname">Last name</label>
-                        </br>
-                        <input type="text" name="lastname" id="lastname" required>
-                        </br>
-                        <label for="email">Email address</label>
-                        </br>
-                        <input type="email" name="email" id="email" required>
-                        </br>
-                        </br>
+                <div class="form-group">
+                    <div class="row">
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <label for="firstname">First name</label>
+                            <input type="text" class="form-control" name="firstname" id="firstname" required>
+                            <label for="lastname">Last name</label>
+                            <input type="text" class="form-control" name="lastname" id="lastname" required>
+                            <label for="email">Email address</label>
+                            <input type="email" class="form-control" name="email" id="email" required>
+                        </div>
+                        <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
+                            <label for="help">Can you help?</label>
+                            <select name="how-to-help" class="form-control" id="help" placeholder="Please select">
+                                <option value="guns">Provide guns</option>
+                                <option value="moral">Moral support</option>
+                                <option value="planning">Murder planning</option>
+                                <option value="disposal">Body disposal</option>
+                                <option value="other">Something else</option>
+                            </select>
+                            <label for="message">Your message</label>
+                            <textarea name="message" class="form-control" id="message" rows="4" cols="35" placeholder="What did you want to get in touch about?">
+                            </textarea>
+                        </div>
                     </div>
-                    <div class="col-lg-3 col-md-4 col-sm-6 col-xs-12">
-                        <label for="help">Can you help?</label>
-                        </br>
-                        <select name="how-to-help" id="help" placeholder="Please select">
-                            <option value="guns">Provide guns</option>
-                            <option value="moral">Moral support</option>
-                            <option value="planning">Murder planning</option>
-                            <option value="disposal">Body disposal</option>
-                            <option value="other">Something else</option>
-                        </select>
-                        </br>
-                        </br>
-                        <label for="message">Your message</label>
-                        </br>
-                        <textarea name="message" id="message" rows="3" cols="30" placeholder="What did you want to get in touch about?">
-                        </textarea>
-                        </br>
-                        </br>
-                    </div>
+                    </br>
                 </div>
-                <input type="submit" value="Submit">
+                <input type="submit" value="Submit" class="btn btn-primary">
                 
             </form>
             
@@ -75,7 +68,7 @@
             </br>
             </br>
             </br>
-            &copy: Reuben Harcourt
+            &copy; Reuben Harcourt
         </div>
     </body>
 
